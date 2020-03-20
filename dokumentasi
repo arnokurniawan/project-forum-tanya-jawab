@@ -1,0 +1,42 @@
+install composer
+
+generate key
+
+setting .env
+
+lakukan migrate
+
+
+Eloquent
+
+migration harus benar
+	ada foreign key
+
+
+di terminal:
+	php artisan make:migration add_user_id_to_contacts_table
+
+
+hosting 
+	share hosting
+		punya cpu
+	cloud hosting
+	vps
+		ibarat punya server sendiri
+
+
+
+bikin folder
+git init
+
+jika error page expired berarti belum ditambah @csrf pada form
+
+error pada saat halaman awal pada saat akses login dan register
+solusi:
+Route::get('/{id}', 'PertanyaanController@show')->name('pertanyaan.show');
+harus diubah menjadi :
+Route::get('/show/{id}', 'PertanyaanController@show')->name('pertanyaan.show');
+
+tidak boleh hanya /{id}  saja
+
+
